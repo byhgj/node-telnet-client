@@ -18,6 +18,12 @@ npm install telnet-client
 npm install -g telnet-client
 ```
 
+## 说明
+
+基于mkozjak/node-telnet-client, 增加enable/password自动登录选项
+
+区别于another-telnet-client（只能适应cisco方式）
+
 ## Responsible disclosure
 
 Since version 0.11.x, we have moved from using ```new Buffer``` to ```Buffer.from```,
@@ -204,6 +210,12 @@ of inactivity on the socket.
 * `initialLFCR`: Flag used to determine if an initial '\r\n' (CR+LF) should be sent when connected to server.
 * `username`: Username used to login. Defaults to 'root'.
 * `password`: Password used to login. Defaults to 'guest'.
+
+* `enable`: 允许enable, 并设置enable字符串(enable, sys, super). 默认为null.
+* `enablePrompt`: 提示符. 默认为/>$/
+* `enablePassword`: enable有密码时设置为密码. 默认为null.
+* `enablePasswordPrompt`: 密码提示符. 默认为/Password[: ]*$/i
+
 * `sock`: Duplex stream which can be used for connection hopping/reusing.
 * `irs`: Input record separator. A separator used to distinguish between lines of the response. Defaults to '\r\n'.
 * `ors`: Output record separator. A separator used to execute commands (break lines on input). Defaults to '\n'.
