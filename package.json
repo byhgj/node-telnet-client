@@ -24,9 +24,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/mkozjak/node-telnet-client.git"
+    "url": "http://github.com/byhgj/node-telnet-client.git"
   },
   "contributors": [
+    {
+      "name": "byhgj",
+      "email": "byhgj@163.com"
+    },
     {
       "name": "Petar Koretic",
       "email": "petar.koretic@gmail.com"
